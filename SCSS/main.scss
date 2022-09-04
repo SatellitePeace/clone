@@ -1,3 +1,8 @@
-$primary: red;
-
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@use "custom";
+// SECTIONS
+@use "sections/allCarModels";
+@use "sections/index";
+// COMPONENTS
+@use "components/buttons";
+@use "components/headings";
+@use "components/sidebar";

@@ -1,0 +1,46 @@
+.modelThree {
+  background-image: url("/img/tesla-model-s.jpg");
+}
+
+.model-three-features {
+  display: inline-flex;
+  //   gap: 0 3rem;
+  margin: 0 2rem;
+}
+.model-three-features h3 {
+  font-size: 1.3rem;
+}
+// MODEL X
+.modelx {
+  background-image: url("/img/modelX.jpg");
+}
+@media screen and (min-width: 768px) {
+  .model-flex {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+  .model-three-features h3 {
+    font-size: 2rem;
+  }
+}
+.modelText {
+  max-width: 900px;
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+@media screen and(min-width:768px) {
+  .modelText {
+    padding-left: 5rem;
+  }
+}
+
+.model-powertrain {
+  width: 90%;
+  margin: 0 auto;
+}
+.navPosition {
+  position: static;
+  margin-bottom: -5rem;
+}
