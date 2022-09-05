@@ -19,6 +19,13 @@ button:hover {
 .btn-light-solid:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
+.btn-dark-solid {
+  background-color: rgba(0, 0, 0, 1);
+  color: #fff;
+}
+.btn-dark-solid:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .button-light {
   background: white;
   color: #000;
