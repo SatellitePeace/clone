@@ -2,12 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;500;700&family=Ultra&display=swap");
 
 // Font Variables
-$roboto: "Roboto Mono", serif;
+$roboto: "Roboto", serif;
+$robotoMono: "Roboto Mono";
 
 // Styles
 body {
   font-family: $roboto;
-  font-weight: normal;
 }
 h1,
 h2,
@@ -15,21 +15,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $roboto;
+  font-family: $robotoMono;
+  font-weight: 700;
 }
 img {
   display: block;
   width: 100%;
 }
-.button {
+button {
   font-family: $roboto;
-  font-weight: bold;
+  font-weight: 500;
 }
 a {
-  font-family: $roboto;
+  font-family: $robotoMono;
   font-weight: 500;
 }
 $light: white;
 $info: #fafafa;
+$warning: #000;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

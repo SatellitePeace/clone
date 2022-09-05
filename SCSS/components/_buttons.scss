@@ -6,13 +6,19 @@ button {
   height: 2.7rem;
   border-radius: 7px;
   background: transparent;
-  transition: all 0.3s;
+  transition: all 0.3s linear;
 }
 button:hover {
   border: none;
   outline: none;
 }
-
+.btn-light-solid {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000;
+}
+.btn-light-solid:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
 .button-light {
   background: white;
   color: #000;
@@ -30,6 +36,24 @@ button:hover {
 .button-dark:hover {
   background-color: #000;
   color: #fff;
+}
+.outline-dark {
+  border: 2px solid #000;
+  background: transparent;
+  color: #000;
+}
+.outline-dark:hover {
+  background-color: #000;
+  color: #fff;
+}
+.outline-light {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+.outline-light:hover {
+  background-color: #fff;
+  color: #000;
 }
 .button-group {
   margin-bottom: 3rem;

@@ -1,0 +1,19 @@
+// Model Three hero background image
+.modelThree {
+  background-image: url("/img/model3.jpg");
+}
+// Model Y hero background image
+.modelYou {
+  background-image: url("/img/modelY.jpg");
+}
+
+// MODEL 3 AND Y FOOTER STYLES
+.footer-article {
+  padding-top: 7rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .footer-article {
+    padding-top: 12rem;
+  }
+}
