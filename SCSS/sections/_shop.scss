@@ -155,7 +155,7 @@
 }
 #shopNav {
   height: 4rem;
-  z-index: 1;
+  z-index: 100;
 }
 #shopNav article a {
   margin: 10px;
@@ -171,7 +171,7 @@
 #shopNav:hover,
 #shopNav.active {
   background-color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   transition: all 0.6s;
 }
 #shopNav.active .navLinks {
@@ -186,69 +186,66 @@
   overflow: hidden;
 }
 
-#products .productsControls {
+.productsControls {
   position: absolute;
-  top: 40%;
-  font-size: 5rem;
-  color: green;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  left: 1%;
+  font-size: 2rem;
+  padding: 0.5px;
+  width: 2.5rem;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  left: 2%;
+  display: block;
+  left: 3%;
   z-index: 10;
 }
 #products .productsControls:nth-of-type(2) {
-  left: 95%;
-  text-align: right;
+  left: 90vw;
+  margin-right: auto;
 }
 #products .carousel {
-  width: 98%;
+  width: 100%;
   height: 500px;
-  background: blue;
-  margin: 10px auto;
+
+  margin-left: 2rem;
   display: flex;
   gap: 1.5rem;
   justify-content: left;
+  align-items: center;
   overflow-x: auto;
 }
-// #products .carousel::-webkit-scrollbar {
-//   visibility: hidden;
-// }
-#products::-webkit-scrollbar-track {
-  background: #40d3dc;
-}
 
-/* Handle */
-#products::-webkit-scrollbar-thumb {
-  background-color: red;
-}
-
-/* Handle on hover */
-#products .carousel::-webkit-scrollbar-thumb:hover {
-  background: blue;
-}
-#products .carousel figure {
-  min-width: 300px;
+#products .carousel .fig {
+  min-width: 400px;
   height: 400px;
   position: relative;
   left: 0;
   text-align: center;
   padding-top: 30px;
-  transition: 0.5s;
+  cursor: pointer;
+  animation-duration: 2s;
 }
-#products .carousel figure img {
+#products .carousel .fig img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
-
-.carousel::-webkit-scrollbar {
-  width: 10px;
+.carousel .fig figcaption {
+  font-size: 1.3rem;
+  margin-top: 1rem;
 }
-
-.carousel::-webkit-scrollbar-track {
-  background-color: green;
+#products .carousel::-webkit-scrollbar {
+  visibility: hidden;
 }
-
-.carousel::-webkit-scrollbar-thumb {
-  background-color: red;
+@media screen and (max-width: 568px) {
+  #products .carousel .fig {
+    min-width: 200px;
+    height: 300px;
+  }
 }
