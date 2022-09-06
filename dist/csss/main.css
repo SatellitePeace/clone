@@ -32,6 +32,7 @@ button {
 a {
   font-family: "Roboto Mono";
   font-weight: 500;
+  color: rgba(0, 0, 0, 0.1);
 }
 
 /*!
@@ -10988,7 +10989,10 @@ textarea.form-control-lg {
     gap: 0;
   }
   .car-features-flex {
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
   }
 }
 .model-powertrain {
@@ -11512,6 +11516,101 @@ footer ul li {
   background-color: red;
 }
 
+.accounts {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.accounts .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hoverControl {
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1rem;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+}
+
+.hover {
+  position: relative;
+}
+
+.message {
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  max-width: 350px;
+  width: 60vw;
+  max-height: 250px;
+  height: 60vh;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  transition: 1s linear;
+  display: none;
+}
+
+.hover:hover .message {
+  display: block;
+}
+
+.formInput {
+  height: 2.7rem;
+  font-size: 1.3rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5rem;
+  display: block;
+  max-width: 100%;
+  width: 20rem;
+  padding: 0 1rem;
+  margin: 10px;
+}
+
+.formInput:focus {
+  outline: none;
+}
+
+.nextBtn:hover {
+  background: rgb(53, 53, 183) !important;
+}
+
+.formOption {
+  position: relative;
+  font-weight: bold;
+}
+
+.formOption::after,
+.formOption::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  top: 50%;
+  right: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.formOption::after {
+  left: 2rem;
+}
+
 button {
   border: none;
   outline: none;
@@ -11521,7 +11620,7 @@ button {
   height: 2.7rem;
   border-radius: 7px;
   background: transparent;
-  transition: all 0.3s linear;
+  transition: 0.3s ease;
 }
 
 button:hover {
