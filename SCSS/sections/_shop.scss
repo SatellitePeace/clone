@@ -209,11 +209,24 @@
   justify-content: left;
   overflow-x: auto;
 }
-#products .carousel::-webkit-scrollbar {
-  visibility: hidden;
+// #products .carousel::-webkit-scrollbar {
+//   visibility: hidden;
+// }
+#products::-webkit-scrollbar-track {
+  background: #40d3dc;
+}
+
+/* Handle */
+#products::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+/* Handle on hover */
+#products .carousel::-webkit-scrollbar-thumb:hover {
+  background: blue;
 }
 #products .carousel figure {
-  min-width: 330px;
+  min-width: 300px;
   height: 400px;
   position: relative;
   left: 0;
@@ -226,4 +239,16 @@
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+.carousel::-webkit-scrollbar {
+  width: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background-color: green;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: red;
 }
