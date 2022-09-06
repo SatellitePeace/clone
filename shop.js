@@ -22,53 +22,34 @@ function fixNav() {
 
 // Products carousel controller
 
-const controls = document.querySelectorAll(".productsControls");
-const figures = document.getElementsByTagName("figure");
-
-let slide = 0;
-controls[1].onclick = () => {
-  slide++;
-  for (let i of figures) {
-    if (slide == 0) {
-      i.style.left = "0px";
-    }
-    if (slide == 1) {
-      i.style.left = "-400px";
-    }
-    if (slide == 2) {
-      i.style.left = "-800px";
-    }
-    if (slide == 3) {
-      i.style.left = "-1600px";
-    }
-    if (slide == 4) {
-      i.style.left = "-2400px";
-    }
-    if (slide > 4) {
-      slide = 4;
-    }
-  }
-};
-controls[0].onclick = () => {
-  slide--;
-  for (let i of figures) {
-    if (slide == 0) {
-      i.style.left = "0px";
-    }
-    if (slide == 1) {
-      i.style.left = "-740px";
-    }
-    if (slide == 2) {
-      i.style.left = "-1480px";
-    }
-    if (slide == 3) {
-      i.style.left = "-2220px";
-    }
-    if (slide == 4) {
-      i.style.left = "-2400px";
-    }
-    if (slide < 0) {
-      slide = 4;
-    }
-  }
-};
+// controls[0].onclick = () => {
+//   slide--;
+//   for (let i of figures) {
+//     if (slide == 0) {
+//       i.style.left = "0px";
+//     }
+//     if (slide == 1) {
+//       i.style.left = "-740px";
+//     }
+//     if (slide == 2) {
+//       i.style.left = "-1480px";
+//     }
+//     if (slide == 3) {
+//       i.style.left = "-2220px";
+//     }
+//     if (slide == 4) {
+//       i.style.left = "-2400px";
+//     }
+//     if (slide < 0) {
+//       slide = 4;
+//     }
+//   }
+// };
+const carousel = document.getElementById("carousel");
+const items = document.getElementsByClassName("fig");
+function next() {
+  carousel.append(items[0]);
+}
+function prev() {
+  carousel.prepend(items[items.length - 1]);
+}

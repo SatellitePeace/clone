@@ -11,33 +11,34 @@
 
     <body>
 
-        <nav class="navbar navPosition d-flex justify-content-between" id="nav">
-            <div class="container-fluid">
-                <!-- logo -->
-                <article class="">
-                    <a href="index.html" class="text-dark">
-                        TELSA
-                        <!-- <img src="../img/logo.png" alt="" class="w-24 h-25"> -->
-                    </a>
-                </article>
-                <!-- car models -->
-                <article class="d-none d-xl-flex">
-                    <a href="modelS.html" class="text-dark">Model S</a>
-                    <a href="model3.html">Model 3</a>
-                    <a href="modelX.html">Model X</a>
-                    <a href="modelY.html">Model Y</a>
-                    <a href="solarRoof.html">Solar Roof</a>
-                    <a href="solarPanel.html">Solar Panels</a>
-                </article>
-                <!-- contact section and menu -->
-                <article class="menu-section ">
-                    <a href="shop.html" class="d-none d-xl-flex">Shop</a>
-                    <a href="./account.html" class="d-none d-xl-flex">Account</a>
-                    <a href="#" class="" id="menu">Menu</a>
-                </article>
-            </div>
-        </nav>
-        <main id="mainBody" class="overflow-hidden">
+
+        <main id="mainBody" class="overflow-hidden,position-relative">
+            <nav class="navbar navPosition d-flex justify-content-between" id="nav">
+                <div class="container-fluid">
+                    <!-- logo -->
+                    <article class="">
+                        <a href="index.html" class="text-dark">
+                            TELSA
+                            <!-- <img src="../img/logo.png" alt="" class="w-24 h-25"> -->
+                        </a>
+                    </article>
+                    <!-- car models -->
+                    <article class="d-none d-xl-flex">
+                        <a href="modelS.html" class="text-dark">Model S</a>
+                        <a href="model3.html">Model 3</a>
+                        <a href="modelX.html">Model X</a>
+                        <a href="modelY.html">Model Y</a>
+                        <a href="solarRoof.html">Solar Roof</a>
+                        <a href="solarPanel.html">Solar Panels</a>
+                    </article>
+                    <!-- contact section and menu -->
+                    <article class="menu-section ">
+                        <a href="shop.html" class="d-none d-xl-flex">Shop</a>
+                        <a href="./account.html" class="d-none d-xl-flex">Account</a>
+                        <a href="#" class="" id="menu">Menu</a>
+                    </article>
+                </div>
+            </nav>
             <!-- Model 3 section -->
             <header class="models solar-Panels d-flex flex-column justify-content-between">
                 <!-- article one -->
@@ -52,11 +53,7 @@
                 <article class="text-light car-flex mb-5 ">
                     <aside class="car-features-flex">
                         <div>
-                            <h3 class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-                                </svg>
+                            <h3 class=""><i class="bi bi-sun-fill"></i>
                             </h3>
                             <small class="">Convert Sunlight
                                 <br> to Energy</small>
@@ -163,11 +160,7 @@
 
             <aside class="sidebar" id="sidebar">
                 <div class="mb-5 pt-3 pe-5 pl-0 text-end bg-light sticky-top d-block " id="close">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="text-dark"
-                            class="bi bi-x-lg " viewBox="0 0 16 16">
-                            <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
-                        </svg></a>
+                    <a href="#"><i class="bi bi-x-lg"></i></a>
                 </div>
                 <ul class="mb-20 flex flex-col space-y-6 font-medium " id="sidebar">
 
