@@ -21,30 +21,6 @@ function fixNav() {
 }
 
 // Products carousel controller
-
-// controls[0].onclick = () => {
-//   slide--;
-//   for (let i of figures) {
-//     if (slide == 0) {
-//       i.style.left = "0px";
-//     }
-//     if (slide == 1) {
-//       i.style.left = "-740px";
-//     }
-//     if (slide == 2) {
-//       i.style.left = "-1480px";
-//     }
-//     if (slide == 3) {
-//       i.style.left = "-2220px";
-//     }
-//     if (slide == 4) {
-//       i.style.left = "-2400px";
-//     }
-//     if (slide < 0) {
-//       slide = 4;
-//     }
-//   }
-// };
 const carousel = document.getElementById("carousel");
 const items = document.getElementsByClassName("fig");
 function next() {

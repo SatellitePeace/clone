@@ -15,9 +15,8 @@
             <div class="container-fluid">
                 <!-- logo -->
                 <article class="">
-                    <a href="index.html" class="text-dark">
+                    <a href="index.html" class="text-light logo">
                         TELSA
-                        <!-- <img src="../img/logo.png" alt="" class="w-24 h-25"> -->
                     </a>
                 </article>
                 <!-- car models -->
@@ -299,15 +298,66 @@
                     </div>
                     <a href="#" class="text-light">Get Updates</a>
                 </article>
-                <ul class="d-lg-flex justify-content-center text-center pb-5">
-                    <li><a href="#" class="text-decoration-none text-light">Tesla © 2022</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Privacy & Legal</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">Vehicle Recalls</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">
+                <ul class="text-center pb-5">
+                    <li><a href="#" class="text-light">Tesla © 2022</a></li>
+                    <li><a href="#" class="text-light">Privacy & Legal</a></li>
+                    <li><a href="#" class="text-light">Vehicle Recalls</a></li>
+                    <li><a href="#" class="text-light">
                             Careers</a></li>
-                    <li><a href="#" class="text-decoration-none text-light">News</a></li>
+                    <li><a href="#" class="text-light">News</a></li>
                 </ul>
             </footer>
+            <!-- ACTION FORM -->
+            <aside id="actionForm">
+                <form id="form" class="">
+                    <aside>
+                        <a href="#" id="close-btn"><i class="bi bi-x"></i></a>
+                    </aside>
+                    <div>
+                        <p>Question Center</p>
+                        <h4>
+                            Chat With Us
+                        </h4>
+                        <p>
+                            Provide your information
+                        </p>
+                    </div>
+                    <div>
+                        <aside id="form-input">
+                            <label for="First name">First name</label>
+                            <input type="text" required>
+                        </aside>
+                        <aside id="form-input">
+                            <label for="Last name">Last name (Optional)</label>
+                            <input type="text">
+                        </aside>
+                        <aside id="form-input">
+                            <label for="Email">Email</label>
+                            <input type="email" required>
+                        </aside>
+                        <aside id="form-input">
+                            <label for="phone">phone</label>
+                            <input type="number" required>
+                        </aside>
+                        <aside id="form-input">
+                            <label for="Zip Code">Zip Code</label>
+                            <input type="number" required>
+                        </aside>
+                        <aside id="form-input">
+                            <label for="Tesla">Get Tesla updates</label>
+                            <select>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </aside>
+                        <aside id="form-input">
+                            <button type="submit"> Start Chat</button>
+                        </aside>
+                    </div>
+                </form>
+
+                <a href="#" id="show-form" class="text-dark"><i class="bi bi-chat-left-dots"></i></a>
+            </aside>
             <!-- SIDEBAR NAV -->
             <aside class="sidebar" id="sidebar">
                 <div class="mb-5 pt-3 pe-5 pl-0 text-end bg-light sticky-top d-block " id="close">
@@ -357,6 +407,7 @@
                 </ul>
             </aside>
         </main>
+        <script src="/callToActionForm.js"></script>
         <script src="/solarRoof.js"></script>
         <script src="./app.js"></script>
     </body>
