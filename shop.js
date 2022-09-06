@@ -21,8 +21,10 @@ function fixNav() {
 }
 
 // Products carousel controller
+
 const controls = document.querySelectorAll(".productsControls");
 const figures = document.getElementsByTagName("figure");
+
 let slide = 0;
 controls[1].onclick = () => {
   slide++;
@@ -63,7 +65,7 @@ controls[0].onclick = () => {
       i.style.left = "-2220px";
     }
     if (slide == 4) {
-      i.style.left = "-2800px";
+      i.style.left = "-2400px";
     }
     if (slide < 0) {
       slide = 4;
