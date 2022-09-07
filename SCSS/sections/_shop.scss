@@ -202,12 +202,12 @@
   display: block;
   left: 3%;
   z-index: 10;
-  transition: 1s;
 }
 #products .productsControls:nth-of-type(2) {
   left: 90vw;
   margin-right: auto;
 }
+
 #products .carousel {
   width: 100%;
   height: 500px;
@@ -217,7 +217,7 @@
   justify-content: left;
   align-items: center;
   overflow-x: auto;
-  transition: 1s linear;
+  transition: 2s;
 }
 
 #products .carousel .fig {
@@ -228,15 +228,13 @@
   text-align: center;
   padding-top: 30px;
   cursor: pointer;
-  animation-duration: 2s;
-  transition: 1s linear;
 }
+
 #products .carousel .fig img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
-  transition: 1s linear;
 }
 .carousel .fig figcaption {
   font-size: 1.3rem;
