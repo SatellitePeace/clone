@@ -3,12 +3,12 @@
   position: fixed;
   top: 0;
   right: 0;
-  max-width: 400px;
+  max-width: 300px;
   width: 100%;
   height: 100vh;
   padding-left: 1rem;
   background: #fff;
-  overflow-y: scroll;
+  overflow-y: auto;
   transform: translateX(100%);
   transition: all 0.4s linear;
   z-index: 100;
@@ -18,13 +18,16 @@
 }
 .sidebar ul li {
   margin-bottom: 1.5rem;
-  max-width: 250px;
+  max-width: 200px;
   width: 100%;
   padding: 5px 10px;
   border-radius: 1rem;
   transition: 0.3s ease;
 }
-.sidebar ul li:hover {
+// .sidebar ul li:hover {
+//   background: rgba(0, 0, 0, 0.1);
+// }
+.sidebar ul li:not(:first-child):hover {
   background: rgba(0, 0, 0, 0.1);
 }
 .sidebar ul li a {
@@ -34,4 +37,16 @@
 }
 .sidebar.show {
   transform: translateX(0);
+}
+#formInput {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  height: 2.2rem;
+  width: 100%;
+}
+#formInput:focus {
+  outline: none;
+}
+#formInput::placeholder {
+  padding-left: 1.8rem;
 }
