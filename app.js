@@ -43,9 +43,7 @@ function changeStateOnScroll() {
 // ADD AND CHANGE DATE DYNAMICALLY
 function getDate() {
   let d = new Date().getFullYear();
-
   const date = document.getElementById("date");
   date.innerText += `  ${d} `;
-  console.log(date);
 }
 getDate();

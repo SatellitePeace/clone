@@ -11368,7 +11368,6 @@ footer ul li {
   display: block;
   left: 3%;
   z-index: 10;
-  transition: 1s;
 }
 
 #products .productsControls:nth-of-type(2) {
@@ -11385,7 +11384,7 @@ footer ul li {
   justify-content: left;
   align-items: center;
   overflow-x: auto;
-  transition: 1s linear;
+  transition: 2s;
 }
 
 #products .carousel .fig {
@@ -11396,9 +11395,6 @@ footer ul li {
   text-align: center;
   padding-top: 30px;
   cursor: pointer;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  transition: 1s linear;
 }
 
 #products .carousel .fig img {
@@ -11407,7 +11403,6 @@ footer ul li {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: 1s linear;
 }
 
 .carousel .fig figcaption {
