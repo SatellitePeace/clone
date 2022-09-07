@@ -5,42 +5,43 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/favicon.jpg" type="image/x-icon">
         <link rel="stylesheet" href="./dist/csss/main.css">
-        <title>Tesla||Model S</title>
+        <title>Tesla||Model 3</title>
     </head>
 
-    <body id="mainBody" class="">
+    <body id="mainBody">
 
-        <nav class="navbar navPosition d-flex justify-content-between " id="nav">
+        <nav class="navbar fixed-top d-flex justify-content-between scrollNav" id="nav">
             <div class="container-fluid">
                 <!-- logo -->
                 <article class="">
-                    <a href="index.html" class="logo text-light">
+                    <a href="index.html" class="logo text-light navLinks">
                         TESLA
                     </a>
                 </article>
                 <!-- car models -->
                 <article class="d-none d-xl-flex">
-                    <a href="modelS.html" class="text-light" class="text-light">Model S</a>
-                    <a href="model3.html" class="text-light">Model 3</a>
-                    <a href="modelX.html" class="text-light">Model X</a>
-                    <a href="modelY.html" class="text-light">Model Y</a>
-                    <a href="solarRoof.html" class="text-light">Solar Roof</a>
-                    <a href="solarPanel.html" class="text-light">Solar Panels</a>
+                    <a href="modelS.html" class="text-light navLinks">Model S</a>
+                    <a href="model3.html" class="text-light navLinks">Model 3</a>
+                    <a href="modelX.html" class="text-light navLinks">Model X</a>
+                    <a href="modelY.html" class="text-light navLinks">Model Y</a>
+                    <a href="solarRoof.html" class="text-light navLinks">Solar Roof</a>
+                    <a href="solarPanel.html" class="text-light navLinks">Solar Panels</a>
                 </article>
                 <!-- contact section and menu -->
                 <article class="menu-section ">
-                    <a href="shop.html" class="d-none d-xl-flex text-light">Shop</a>
-                    <a href="./account.html" class="d-none d-xl-flex text-light">Account</a>
-                    <a href="#" class="text-light" id="menu">Menu</a>
+                    <a href="shop.html" class="d-none d-xl-flex text-light navLinks">Shop</a>
+                    <a href="./account.html" class="d-none d-xl-flex text-light navLinks">Account</a>
+                    <a href="#" class="text-light navLinks" id="menu">Menu</a>
                 </article>
             </div>
         </nav>
         <main>
             <!-- Model 3 section -->
-            <header class="models modelThree d-flex flex-column justify-content-between">
+            <header class="models modelThree d-flex flex-column justify-content-between" id="section">
                 <!-- article one -->
-                <article class="mt-5 pt-5">
+                <article class="mt-4">
                     <h1 class="text-light">Model 3</h1>
                 </article>
                 <!-- article two -->
@@ -48,7 +49,7 @@
                     <aside class="car-features-flex">
                         <div>
                             <h3 class="">
-                                <i class="bi bi-speedometer2"></i>3.1s
+                                <i class="bi bi-speedometer2 text-light"></i>3.1s
                             </h3>
                             <small class="">0-60 mph*</small>
                         </div>
@@ -62,7 +63,6 @@
                             <small class="">Dual Motor+</small>
                         </div>
                     </aside>
-
                     <div>
                         <button class="outline-light">ORDER
                             NOW</button>
@@ -70,7 +70,7 @@
                 </article>
             </header>
             <!-- SECTION TWO -->
-            <section class="bg-info">
+            <section class="bg-info" id="section">
                 <article class="modelText">
                     <h3>
                         Electric Powertrain
@@ -87,7 +87,7 @@
                 </article>
             </section>
             <!-- SECTION -->
-            <section class="row  mt-5">
+            <section class="row  mt-5" id="section">
                 <article class="col-12 col-lg-5 p-5 d-lg-flex flex-column justify-content-between">
                     <div>
                         <p>Interior</p>
@@ -116,7 +116,7 @@
                 </article>
             </section>
             <!-- FOOTER -->
-            <footer class="pb-2 mt-5 mt-lg-5 bg-warning">
+            <footer class="pb-2 mt-5 mt-lg-5 bg-warning" id="section">
                 <article
                     class="row d-flex flex-column flex-lg-row justify-content-center px-3 footer-article text-center">
                     <div class="col-12 col-lg-6">
@@ -140,7 +140,7 @@
                         Standard Connectivity and any limitations.</a>
                 </p>
                 <ul class="text-center align-items-center m-2 py-lg-2">
-                    <li><a href="#" class="text-light">Tesla © 2022</a></li>
+                    <li><a href="#" class="text-light" id="date">Tesla © </a></li>
                     <li><a href="#" class="text-light">Privacy & Legal</a></li>
                     <li><a href="#" class="text-light">Vehicle Recalls</a></li>
                     <li><a href="#" class="text-light">

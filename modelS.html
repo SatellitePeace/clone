@@ -9,9 +9,9 @@
         <title>Tesla||Model S</title>
     </head>
 
-    <body>
+    <body id="mainBody">
 
-        <nav class="navbar navPosition d-flex justify-content-between " id="nav">
+        <nav class="navbar fixed-top d-flex justify-content-between scrollNav" id="nav">
             <div class="container-fluid">
                 <!-- logo -->
                 <article class="">
@@ -36,11 +36,11 @@
                 </article>
             </div>
         </nav>
-        <main id="mainBody">
+        <main>
             <!-- Model 3 section -->
-            <section class="models modelSteve d-flex flex-column justify-content-between">
+            <header class="models modelSteve d-flex flex-column justify-content-between">
                 <!-- article one -->
-                <article class="mt-5 pt-5">
+                <article class="mt-4 pt-5">
                     <h1 class="">Model S</h1>
                     <span class="">
                         Plaid
@@ -64,13 +64,12 @@
                             <small class="">Top Speed+</small>
                         </div>
                     </aside>
-
                     <div>
                         <button class="outline-light">ORDER
                             NOW</button>
                     </div>
                 </article>
-            </section>
+            </header>
             <!-- SECTION TWO -->
             <section class="bg-info">
                 <article class="modelText">
@@ -120,7 +119,7 @@
                         Standard Connectivity and any limitations.</a>
                 </p>
                 <ul class=" text-center align-items-center m-2">
-                    <li><a href="#" class="text-dark">Tesla © 2022</a></li>
+                    <li><a href="#" class="text-dark" id="date">Tesla © </a></li>
                     <li><a href="#" class="text-dark">Privacy & Legal</a></li>
                     <li><a href="#" class="text-dark">Vehicle Recalls</a></li>
                     <li><a href="#" class="text-dark">
@@ -211,6 +210,7 @@
                 </ul>
             </aside>
         </main>
+        <script src="./yes.js"></script>
         <script src="/callToActionForm.js"></script>
         <script src="./app.js"></script>
     </body>
