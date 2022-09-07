@@ -29,9 +29,9 @@
                 </article>
                 <!-- contact section and menu -->
                 <article class="menu-section">
-                    <a href="#" class="navLinks"><i class="bi bi-search"></i>
+                    <a href="#" class="navLinks d-none d-lg-inline"><i class="bi bi-search text-light"></i>
                     </a>
-                    <a href="#" class="navLinks"><i class="bi bi-cart3"></i></a>
+                    <a href="#" class="navLinks "><i class="bi bi-cart3 text-light"></i></a>
                     <a href="#" class="navLinks" id="menu">Menu</a>
                 </article>
             </div>
@@ -232,9 +232,9 @@
                 </article>
             </section>
 
-            <footer class="pb-2 mt-lg-5">
+            <footer class="pb-2 mt-lg-5" id="section">
                 <ul class="text-center align-items-center m-2">
-                    <li><a href="#" class="text-dark">Tesla © 2022</a></li>
+                    <li><a href="#" class="text-dark" id="date">Tesla © </a></li>
                     <li><a href="#" class="text-dark">Privacy & Legal</a></li>
                     <li><a href="#" class="text-dark">Vehicle Recalls</a></li>
                     <li><a href="#" class="text-dark">
@@ -249,45 +249,33 @@
                 </div>
                 <ul class="mb-20 flex flex-col space-y-6 font-medium " id="sidebar">
 
-                    <div class="d-block d-xl-none mt-5" id="sidebar-div">
-                        <li>
-                            <a href="modelS.html">Model S</a>
-                        </li>
-                        <li>
-                            <a href="model3.html">Model 3</a>
-                        </li>
-                        <li>
-                            <a href="modelX.html">Model X</a>
-                        </li>
-                        <li>
-                            <a href="modelY.html">Model Y</a>
-                        </li>
-                        <li>
-                            <a href="solarRoof.html">Solar Roof</a>
-                        </li>
-                        <li>
-                            <a href="solarPanel.html">Solar Panels</a>
-                        </li>
-                    </div>
-                    <li><a href="#">Existing Inventory</a></li>
-                    <li><a href="#">Used Inventory</a></li>
-                    <li><a href="#">Trade-In</a></li>
-                    <li><a href="#">Test Drive</a></li>
-                    <li><a href="#">Insurance</a></li>
-                    <li><a href="#">Powerwall</a></li>
-                    <li><a href="#">Commercial Energy</a></li>
-                    <li><a href="#">Utilities</a></li>
-                    <li><a href="#">Charging</a></li>
-                    <li><a href="#">Find Us</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                    <li class="d-block d-xl-none"><a href="shop.html">Shop</a></li>
-                    <li class="d-block d-xl-none"><a href="./account.html">Account</a>
+                    <li class="noHover d-lg-none">
+                        <div class="d-block d-lg-none mt-5" id="sidebar-div">
+                            <div class="position-relative pb-3">
+                                <i class="bi bi-search position-absolute mt-1 mx-2 d-block"></i>
+                                <input type="text" id="formInput" class="mb-3 position-absolute" placeholder="Search">
+                            </div>
+
                     </li>
-                    <span class="flex justify-between hover:bg-slate-400 hover:rounded-full cursor-pointer">
-                        <li class="hover:bg-slate-400 hover:rounded-full "><a href="#">More</a></li>
-                        <a href="#"><i class="bi bi-chevron-right"></i></a>
-                    </span>
+                    <li>
+                        <a href="#">Charging</a>
+                    </li>
+                    <li>
+                        <a href="#">Vehicle Accessories</a>
+                    </li>
+                    <li>
+                        <a href="#">Apparrel</a>
+                    </li>
+                    <li>
+                        <a href="#">Lifestyle</a>
+                    </li>
+                    </div>
+                    <li>
+                        <a href="#">Shop FAQ</a>
+                    </li>
+                    <li>
+                        <a href="account.html">Sign In</a>
+                    </li>
                 </ul>
             </aside>
         </main>
