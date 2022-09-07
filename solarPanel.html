@@ -9,39 +9,38 @@
         <title>Tesla||Model S</title>
     </head>
 
-    <body>
+    <body id="mainBody">
 
-
-        <main id="mainBody" class="overflow-hidden,position-relative">
-            <nav class="navbar navPosition d-flex justify-content-between" id="nav">
-                <div class="container-fluid">
-                    <!-- logo -->
-                    <article class="">
-                        <a href="index.html" class="logo">
-                            TELSA
-                        </a>
-                    </article>
-                    <!-- car models -->
-                    <article class="d-none d-xl-flex">
-                        <a href="modelS.html" class="text-dark">Model S</a>
-                        <a href="model3.html">Model 3</a>
-                        <a href="modelX.html">Model X</a>
-                        <a href="modelY.html">Model Y</a>
-                        <a href="solarRoof.html">Solar Roof</a>
-                        <a href="solarPanel.html">Solar Panels</a>
-                    </article>
-                    <!-- contact section and menu -->
-                    <article class="menu-section ">
-                        <a href="shop.html" class="d-none d-xl-flex">Shop</a>
-                        <a href="./account.html" class="d-none d-xl-flex">Account</a>
-                        <a href="#" class="" id="menu">Menu</a>
-                    </article>
-                </div>
-            </nav>
-            <!-- Model 3 section -->
-            <header class="models solar-Panels d-flex flex-column justify-content-between">
+        <nav class="navbar fixed-top d-flex justify-content-between scrollNav" id="nav">
+            <div class="container-fluid">
+                <!-- logo -->
+                <article class="">
+                    <a href="index.html" class="logo">
+                        TELSA
+                    </a>
+                </article>
+                <!-- car models -->
+                <article class="d-none d-xl-flex">
+                    <a href="modelS.html" class="text-dark">Model S</a>
+                    <a href="model3.html">Model 3</a>
+                    <a href="modelX.html">Model X</a>
+                    <a href="modelY.html">Model Y</a>
+                    <a href="solarRoof.html">Solar Roof</a>
+                    <a href="solarPanel.html">Solar Panels</a>
+                </article>
+                <!-- contact section and menu -->
+                <article class="menu-section ">
+                    <a href="shop.html" class="d-none d-xl-flex">Shop</a>
+                    <a href="./account.html" class="d-none d-xl-flex">Account</a>
+                    <a href="#" class="" id="menu">Menu</a>
+                </article>
+            </div>
+        </nav>
+        <main class="overflow-hidden,position-relative">
+            <!-- solar panel section -->
+            <header class="models solar-Panels d-flex flex-column justify-content-between" id="section">
                 <!-- article one -->
-                <article class="mt-5 pt-5">
+                <article class="mt-4">
                     <h1 class="">Solar For Existing Roofs</h1>
                     <span class="">
                         Lowest Cost Solar Panels in America <br>
@@ -69,7 +68,6 @@
                                 Monitorin</small>
                         </div>
                     </aside>
-
                     <div>
                         <button class="outline-light">ORDER
                             NOW</button>
@@ -77,7 +75,7 @@
                 </article>
             </header>
             <!-- SECTION -->
-            <section class="row  mt-5">
+            <section class="row  mt-5" id="section">
                 <article class="col-12 col-lg-5 p-5 d-lg-flex flex-column justify-content-between">
                     <div>
                         <p>Savings</p>
@@ -100,7 +98,7 @@
                 </article>
             </section>
             <!-- SECTION -->
-            <section class="row  mt-5">
+            <section class="row  mt-5" id="section">
                 <article class="col-12 col-lg-7">
                     <img src="/img/solarDurablePanel.webp" alt="model x car" class="house  solar wall charger">
                 </article>
@@ -120,12 +118,8 @@
                         </p>
                     </div>
                     <div class="flex flex-col mt-4">
-                        <button class=" modelcarsBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path
-                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                            </svg> LEARN
+                        <button class=" modelcarsBtn">
+                            <i class="bi bi-plus-circle"></i> LEARN
                             MORE</button>
                         <button class="outline-dark">ORDER
                             NOW</button>
@@ -133,7 +127,7 @@
                 </article>
             </section>
             <!-- FOOTER -->
-            <footer class="pb-2 mt-5 mt-lg-5 bg-warning" id="solar-footer">
+            <footer class="pb-2 mt-5 mt-lg-5 bg-warning solar-footer" id="section">
                 <article class="text-center text-light solar-Panels-footer-article">
                     <h3 class="">Power Your Home</h3>
                     <p class="">Order now or chat with an Tesla Advisor if you have any questions
@@ -148,7 +142,7 @@
                     <a href="#" class="text-light">Get Updates</a>
                 </article>
                 <ul class="">
-                    <li><a href="#" class="text-light">Tesla © 2022</a></li>
+                    <li><a href="#" class="text-light" id="date">Tesla © </a></li>
                     <li><a href="#" class="text-light">Privacy & Legal</a></li>
                     <li><a href="#" class="text-light">Vehicle Recalls</a></li>
                     <li><a href="#" class="text-light">
